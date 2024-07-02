@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-    background-color: #007bff;
+    background-color: #007bff; /* Default blue background */
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -38,7 +38,7 @@ th, td {
 }
 
 th {
-    background-color: #007bff;
+    background-color: #007bff; /* Default blue background */
     color: #fff;
 }
 
@@ -75,5 +75,43 @@ tr:nth-child(even) {
     display: block;
     font-size: 2em;
     font-weight: bold;
-    color: #007bff;
+    color: #ff0055; /* Default blue color */
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1200px) {
+    .header, th  {
+        background-color: #28a745; /* Green background for header and table headers */
+    }
+    .box span {
+        color: #28a745; /* Green background for header and table headers */
+    }
+}
+
+@media (max-width: 992px) {
+    .header, th  {
+        background-color: #dc3545; /* Red background for header and table headers */
+    }
+    .box span {
+        color: #dc3545; /* Red background for header and table headers */
+    }
+}
+
+@media (max-width: 768px) {
+    .header, th  {
+        background-color: #ffc107; /* Yellow background for header and table headers */
+    }
+    .box span {
+        color: #ffc107; /* Yellow background for header and table headers */
+    }
+}
+
+@media (max-width: 576px) {
+    .header, th  {
+        background-color: #17a2b8; /* Cyan background for header and table headers */
+    }
+    .box span {
+        color: #17a2b8; /* Cyan background for header and table headers */
+    }
 }
