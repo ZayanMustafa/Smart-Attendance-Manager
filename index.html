@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracker</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Attendance Sheet -->
+    <div class="container" id="container">
+        <div class="header text-center mb-3 mt-2">
+            Attendance Tracker
+        </div>
+        <!-- Attendance Show Box -->
+        <div class="box-container">
+            <div class="box">
+                <h3>Present</h3>
+                <span id="present">0</span>
+            </div>
+            <div class="box">
+                <h3>Absent</h3>
+                <span id="absent">0</span>
+            </div>
+            <div class="box">
+                <h3>Leave</h3>
+                <span id="leave">0</span>
+            </div>
+        </div>
+
+        <!-- Table Container -->
+        <div class="table-container">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Father's Name</th>
+                        <th scope="col">Roll Number</th>
+                        <th scope="col">Present</th>
+                        <th scope="col">Absent</th>
+                        <th scope="col">Leave</th>
+                    </tr>
+                </thead>
+                <tbody id="user-list">
+                    <!-- User data will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Bootstrap Link -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript Link -->
+    <script src="script.js"></script>
+</body>
+</html>
