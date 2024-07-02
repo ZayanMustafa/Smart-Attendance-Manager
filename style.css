@@ -75,7 +75,7 @@ tr:nth-child(even) {
     display: block;
     font-size: 2em;
     font-weight: bold;
-    color: #ff0055; /* Default blue color */
+    color: #007bff; /* Default blue color */
 }
 
 /* Media Queries for Responsive Design */
